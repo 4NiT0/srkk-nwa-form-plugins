@@ -70,6 +70,6 @@ export class SampleIframe extends LitElement {
     }
 }
 
-// registering the web component.
+// registering the web component..
 const elementName = 'srkk-nwc-form-plugins-iframe';
 customElements.define(elementName, SampleIframe);
