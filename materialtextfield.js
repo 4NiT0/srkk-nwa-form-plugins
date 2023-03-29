@@ -1988,7 +1988,7 @@ let NintexSampleTextfield = _decorate([e$2('nintex-sample-textfield')], function
       value: function getMetaConfig() {
         // plugin contract information
         return {
-          controlName: 'SRKK-Material-Textfield',
+          controlName: 'srkk-material-textfield',
           fallbackDisableSubmit: false,
           iconUrl: 'one-line-text',
           version: '1',
