@@ -33,5 +33,5 @@ export class HelloWorld extends LitElement {
 }
 
 // registering the web component
-const elementName = 'hello-world';
+const elementName = 'srkk-cs-field';
 customElements.define(elementName, HelloWorld);
