@@ -11,12 +11,13 @@ export class HelloWorld extends LitElement {
     return {
       controlName: 'srkk-cs-field',
       fallbackDisableSubmit: false,
-      version: '1.2',
+      version: '1.0',
       properties: { //A custom configuration field. See https://help.nintex.com/en-US/formplugins/Reference/CustomField.htm
-        who: {
+        value: {
           type: 'string',
           title: 'Who',
-          description: 'Who to say hello to'
+          description: 'Who to say hello to',
+          isValueField: true
         }
       }
     };
