@@ -19,7 +19,8 @@ export class HelloWorld extends LitElement {
           description: 'Who to say hello to',
           isValueField: true
         }
-      }
+      },
+      events: ["ntx-value-change"]
     };
   }
   
@@ -27,6 +28,18 @@ export class HelloWorld extends LitElement {
     super();
     this.who = 'World';
   }
+  
+  onChange(e) {
+    const args = {
+        bubbles: true,
+        cancelable: false,
+        composed: true,
+        // value coming from input change event. 
+        detail: e.target.value,
+    };
+    const event = new CustomEvent('ntx-value-change', args);
+    this.dispatchEvent(event);
+}
 
   render() {
     return html`<p>Hello ${this.who}<p/>`;
