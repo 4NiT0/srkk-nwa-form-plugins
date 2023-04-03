@@ -47,7 +47,7 @@ export class HelloWorld extends LitElement {
   render() {
     return html`
     ${this.headerTable()}
-    <tbody>${this.htmlContent}</tbody></thead>
+    <tbody><tr><td>${this.htmlContent}</td></tr></tbody></table>
     `;
   }
 }
