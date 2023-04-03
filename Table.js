@@ -10,7 +10,7 @@ export class SRKKFPTable extends LitElement {
   // return a promise for contract changes.
   static getMetaConfig() {
     return {
-      controlName: 'srkkfptable',
+      controlName: 'srkkfptable2',
       fallbackDisableSubmit: false,
       version: '1.3',
       properties: { //A custom configuration field. See https://help.nintex.com/en-US/formplugins/Reference/CustomField.htm
@@ -60,5 +60,5 @@ tableHeader() {
 }
 
 // registering the web component
-const elementName = 'srkkfptable';
+const elementName = 'srkkfptable2';
 customElements.define(elementName, SRKKFPTable);
