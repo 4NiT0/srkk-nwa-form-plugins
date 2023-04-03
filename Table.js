@@ -1,6 +1,6 @@
 import { html,LitElement} from 'https://cdn.jsdelivr.net/gh/lit/dist@2/all/lit-all.min.js';
 // define the component
-export class SRKKFPTAble extends LitElement {
+export class SRKKFPTable extends LitElement {
   
   static properties = {
     who: {type: String},
@@ -23,7 +23,7 @@ export class SRKKFPTAble extends LitElement {
           type: 'string',
           title: 'Col2',
           description: 'Column 2 values',
-          isValueField: true
+          isValueField: false
         }
       },
       events: ["ntx-value-change"]
@@ -55,11 +55,11 @@ tableHeader() {
 
   render() {
     return html`<table><thead>
-      ${this.tableHeader}
+      ${this.tableHeader()}
     </thead><tbody></tbody></table>`;
   }
 }
 
 // registering the web component
 const elementName = 'srkk-fp-table';
-customElements.define(elementName, SRKKFPTAble);
+customElements.define(elementName, SRKKFPTable);
