@@ -16,13 +16,13 @@ export class SRKKFPTable extends LitElement {
       properties: { //A custom configuration field. See https://help.nintex.com/en-US/formplugins/Reference/CustomField.htm
         col1: {
           type: 'string',
-          title: 'Col1',
+          title: 'col1',
           description: 'Column 1 values',
           isValueField: true
         },
         col2: {
           type: 'string',
-          title: 'Col2',
+          title: 'col2',
           description: 'Column 2 values',
           isValueField: true
         }
@@ -49,7 +49,7 @@ export class SRKKFPTable extends LitElement {
 }
 
 tableHeader() {
-  return html`<tr><th>${new Date()}</th></tr>`;
+  return html`<tr><th>Header 1</th></tr>`;
 }
 
   render() {
