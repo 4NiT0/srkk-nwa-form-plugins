@@ -3,7 +3,7 @@ import { html,LitElement} from 'https://cdn.jsdelivr.net/gh/lit/dist@2/all/lit-a
 export class HelloWorld extends LitElement {
   
   static properties = {
-    who: {type: String},
+    htmlContent: {type: String},
   };
   
   // return a promise for contract changes.
@@ -13,7 +13,7 @@ export class HelloWorld extends LitElement {
       fallbackDisableSubmit: false,
       version: '1.0',
       properties: { //A custom configuration field. See https://help.nintex.com/en-US/formplugins/Reference/CustomField.htm
-        value: {
+        htmlContent: {
           type: 'string',
           title: 'Who',
           description: 'Who to say hello to',
@@ -26,7 +26,7 @@ export class HelloWorld extends LitElement {
   
   constructor() {
     super();
-    this.who = 'World';
+    this.htmlContent = 'World';
   }
   
   onChange(e) {
@@ -42,7 +42,7 @@ export class HelloWorld extends LitElement {
 }
 
   render() {
-    return html`<p>Hello ${this.who}<p/>`;
+    return html`<p>Hello ${this.htmlContent}<p/>`;
   }
 }
 
