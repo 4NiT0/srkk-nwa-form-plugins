@@ -41,8 +41,14 @@ export class HelloWorld extends LitElement {
     this.dispatchEvent(event);
 }
 
+  headerTable(){
+    return html`<table class="table"><thead>Header 1</thead>`;
+  }
   render() {
-    return html`<p>Hello ${this.htmlContent}<p/>`;
+    return html`
+    ${this.headerTable()}
+    <tbody>${this.htmlContent}</tbody></thead>
+    `;
   }
 }
 
