@@ -42,7 +42,7 @@ export class HelloWorld extends LitElement {
 }
 
   headerTable(){
-    return html`<table class="table"><tr><th><thead>Header 1</th></tr></thead>`;
+    return html`<table class="table"><thead><tr><th>Header 1</th></tr></thead>`;
   }
   render() {
     return html`
