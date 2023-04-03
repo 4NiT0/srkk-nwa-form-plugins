@@ -49,9 +49,7 @@ export class SRKKFPTable extends LitElement {
 }
 
 tableHeader() {
-  return html`
-    <tr><th>${new Date()}</th></tr>
-  `'
+  return html`<tr><th>${new Date()}</th></tr>`;
 }
 
   render() {
