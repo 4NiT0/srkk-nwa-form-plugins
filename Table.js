@@ -12,7 +12,7 @@ export class SRKKFPTable extends LitElement {
     return {
       controlName: 'srkkfptable',
       fallbackDisableSubmit: false,
-      version: '1.0',
+      version: '1.3',
       properties: { //A custom configuration field. See https://help.nintex.com/en-US/formplugins/Reference/CustomField.htm
         col1: {
           type: 'string',
@@ -24,7 +24,7 @@ export class SRKKFPTable extends LitElement {
           type: 'string',
           title: 'Col2',
           description: 'Column 2 values',
-          isValueField: false
+          isValueField: true
         }
       },
       events: ["ntx-value-change"]
