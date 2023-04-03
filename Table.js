@@ -3,7 +3,8 @@ import { html,LitElement} from 'https://cdn.jsdelivr.net/gh/lit/dist@2/all/lit-a
 export class SRKKFPTable extends LitElement {
   
   static properties = {
-    who: {type: String},
+    col1: {type: String},
+    col2: {type: String},
   };
   
   // return a promise for contract changes.
